@@ -1,0 +1,1 @@
+{"name":"ai-fishing-game","version":"0.1.0","type":"module","main":"dist/game.umd.js","module":"dist/game.esm.js","exports":{".":{"import":"./dist/game.esm.js","require":"./dist/game.umd.js"}},"scripts":{"build":"node esbuild.config.mjs"},"license":"MIT","devDependencies":{"esbuild":"^0.20.0"}}

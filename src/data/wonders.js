@@ -1,0 +1,16 @@
+export const WONDERS = [
+  { id:'coral_palace',   name:'珊瑚宫',     w:10, reward:{type:'treasure', value:200} },
+  { id:'mermaid_hall',   name:'人鱼宫殿',   w:8,  reward:{type:'treasure', value:350} },
+  { id:'ship_graveyard', name:'沉船墓场',   w:8,  reward:{type:'chest',    value:1} },
+  { id:'sunken_temple',  name:'沉没神庙',   w:6,  reward:{type:'relic',    value:500} },
+  { id:'whale_fall',     name:'鲸落',       w:5,  reward:{type:'fish',     value:'whale_bone_fish'} },
+  { id:'giant_clam',     name:'巨蚌',       w:10, reward:{type:'pearl',    value:180} },
+  { id:'underwater_cave',name:'水下溶洞',   w:9,  reward:{type:'oxygen',   value:2} },
+  { id:'kelp_forest',    name:'海藻森林',   w:9,  reward:{type:'fish',     value:'kelp_dragon'} },
+  { id:'volcanic_vent',  name:'海底火山口', w:4,  reward:{type:'relic',    value:800} },
+  { id:'frozen_abyss',   name:'冰封深渊',   w:4,  reward:{type:'treasure', value:600} },
+  { id:'starfall_pool',  name:'星陨池',     w:3,  reward:{type:'treasure', value:1200} },
+  { id:'ghost_ship',     name:'幽灵船',     w:3,  reward:{type:'chest',    value:2} },
+  { id:'ancient_ruins',  name:'上古遗迹',   w:5,  reward:{type:'relic',    value:1000} },
+  { id:'dragon_palace',  name:'龙宫',       w:2,  reward:{type:'legendary',value:3000} },
+];

@@ -1,0 +1,1 @@
+export const SEASONS = ['春', '夏', '秋', '冬'];

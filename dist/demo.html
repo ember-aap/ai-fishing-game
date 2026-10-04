@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>AI 钓鱼游戏</title>
+<style>body{background:#0d1117;color:#c9d1d9;font-family:monospace;padding:20px}#log{white-space:pre-wrap;min-height:400px}#input{width:100%;padding:8px;background:#161b22;color:#c9d1d9;border:1px solid #30363d;font-family:monospace}</style>
+</head><body>
+<h2>🎣 AI 文字钓鱼游戏</h2>
+<div id="log">输入 help 查看指令。试试 buy basic_worm 10; cast 10</div>
+<input id="input" placeholder="输入指令，回车执行" autofocus/>
+<script src="./game.umd.js"></script>
+<script>
+const g = FishingGame.createGame();
+const logEl = document.getElementById("log");
+const inputEl = document.getElementById("input");
+function append(t){logEl.textContent += "\n\n> " + t; logEl.scrollTop = logEl.scrollHeight;}
+inputEl.addEventListener("keydown", e => {
+  if (e.key === "Enter" && inputEl.value.trim()) {
+    const cmd = inputEl.value.trim(); append(cmd); inputEl.value = "";
+    try { append(g.command(cmd)); } catch (err) { append("❌ " + err.message); }
+  }
+});
+</script></body></html>

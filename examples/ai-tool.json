@@ -1,0 +1,1 @@
+{"name":"fishing_command","description":"AI文字钓鱼游戏。传入指令字符串，返回结果和JSON状态栏。","parameters":{"type":"object","properties":{"command":{"type":"string","description":"游戏指令"}},"required":["command"]}}
